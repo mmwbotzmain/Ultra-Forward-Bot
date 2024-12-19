@@ -12,8 +12,8 @@ class Config:
     BOT_SESSION = environ.get("BOT_SESSION", "Auto_Forward") 
     DATABASE_URI = environ.get("DATABASE", "")
     DATABASE_NAME = environ.get("DATABASE_NAME", "")
-    BOT_OWNER_ID = [int(id) for id in environ.get("BOT_OWNER_ID", '').split()]
-    LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+    BOT_OWNER_ID = environ.get("BOT_OWNER_ID", "")
+    LOG_CHANNEL = environ.get("LOG_CHANNEL", "")
     FORCE_SUB_CHANNEL = environ.get("FORCE_SUB_CHANNEL", "") 
     FORCE_SUB_ON = environ.get("FORCE_SUB_ON", "True")
     PORT = environ.get('PORT', '8080')
